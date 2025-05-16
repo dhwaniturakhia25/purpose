@@ -264,7 +264,7 @@ header .search-wrapper.showsearch{transform:translateY(0%);opacity:1;}
     .service-box .content-wrapper{padding:10px 20px;}
     .our-philosophy .icon-box{gap:15px;}
     .appoitment .service-box .content-wrapper{position:inherit;padding:0px;flex-direction:column;margin-top:20px;}
-    .appoitment .service-box .content-wrapper h4{font-size:18px;line-height:27px;margin-bottom:15px;}
+    .appoitment .service-box .content-wrapper h4{font-size:18px;line-height:27px;margin-bottom:15px;color:var(--secondary);text-align: center;}
     .process-list{margin-top:10px;padding-top:10px;}
     .empowering-client .title-wrapper label:before,
     .empowering-client .title-wrapper label:after{display:none;}
