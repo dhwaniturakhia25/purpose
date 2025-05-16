@@ -105,7 +105,7 @@ header .search-wrapper.showsearch{transform:translateY(0%);opacity:1;}
 .banner-bottom .banner-button{padding:21px 27px;border-radius:20px;text-transform:uppercase;text-align:left;font-size:11px;}
 .banner-bottom .white-btn{background:var(--gray-bg);color:var(--text-color);}
 .banner-bottom .gradiant-btn{-webkit-backdrop-filter:saturate(180%) blur(40px);backdrop-filter:saturate(180%) blur(40px);}
-.banner-bottom .banner-button:hover{background:var(--gray-bg);}
+.banner-bottom .banner-button:hover,.banner-bottom .banner-button.active{background:var(--gray-bg);}
 .who-we-are .content-box{padding:45px 30px 30px;}
 .content-box{height:100%;transition:all .3s ease;cursor:pointer;position:relative;}
 .content-box:hover{color:var(--white);}
