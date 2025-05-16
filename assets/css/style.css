@@ -223,7 +223,7 @@ header .search-wrapper.showsearch{transform:translateY(0%);opacity:1;}
     .navbar-menu li.active .submenu{display:block;overflow:auto;max-height:100px;transition:1s ease;}
     .submenu li{padding:0px;margin:15px 10px 0px;}
     .submenu li a{color:var(--white);}
-    .submenu li:before{right:0;background:var(--white);}
+    .submenu li:before{right:0;background-color:var(--white);}
     .pt-100{padding-top:50px;}
     .pb-100{padding-bottom:50px;}
     .custom-row-space{row-gap:24px;}
