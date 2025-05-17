@@ -29,6 +29,11 @@ jQuery(document).ready(function ($) {
     $("body").toggleClass("mobile-open");
   });
 
+  const path = window.location.pathname;
+  if (path === "/" || path.endsWith("/index.html")) {
+    $("body").addClass("home");
+  }
+
   $('.banner-button').on('click', function () {
     var newBg = $(this).data('bg');
     $('.banner-button').removeClass('active');
