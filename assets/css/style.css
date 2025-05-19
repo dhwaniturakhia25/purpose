@@ -485,6 +485,46 @@ small::after {
     align-items: center;
 }
 
+.gray-border-box {
+    border: 1px solid #0000001A;
+    border-radius: 24px;
+    padding: 13px;
+    transition: all .3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gray-border-box:hover {
+    background: var(--secondary);
+    border-color: var(--primary)
+}
+
+.custom-accordian .accordion-item {
+    border: none;
+    border-bottom: 1px solid #0000001A;
+    margin-top: 20px;
+    position: relative;
+}
+
+.custom-accordian .accordion-button::after {
+    background-image: url(../images/plus-icon.svg);
+}
+
+.custom-accordian .accordion-button {
+    padding: 0 0 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary);
+    box-shadow: none;
+    background: transparent;
+}
+
+.custom-accordian .accordion-body {
+    padding: 0 25px 10px 0px;
+}
+
+
 /* Header */
 .home header {
     position: absolute;
@@ -965,6 +1005,10 @@ header .search-wrapper.showsearch {
     margin: 10px;
 }
 
+.service-hero .title-wrapper {
+    max-width: 840px;
+}
+
 .what-we-do h2 {
     max-width: 540px;
 }
@@ -1038,6 +1082,51 @@ header .search-wrapper.showsearch {
     border-radius: 8px;
     width: max-content;
 }
+
+.service-inner-hero .title-wrapper {
+    max-width: 640px;
+}
+
+.custom-service-space {
+    margin-bottom: 20px;
+}
+
+.other-service-wrapper {
+    counter-reset: section;
+}
+
+.other-service-content {
+    background: var(--gray-bg);
+    border-radius: 16px;
+    padding: 20px;
+    color: var(--text-color);
+    flex: 1;
+}
+
+.other-service-content h5 {
+    margin-bottom: 40px;
+}
+
+.other-servies .number {
+    height: 60px;
+    width: 60px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+
+}
+
+.other-servies .number:before {
+    counter-increment: section;
+    content: counter(section);
+}
+
+
 
 
 /* footer */
@@ -1518,7 +1607,7 @@ header .search-wrapper.showsearch {
     }
 
     .title-wrapper {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .custom-input {
@@ -1566,6 +1655,10 @@ header .search-wrapper.showsearch {
 
     .button-wrapper {
         margin-top: 20px;
+    }
+
+    .custom-row-space {
+        row-gap: 20px;
     }
 
     .icon-box {
@@ -1644,6 +1737,30 @@ header .search-wrapper.showsearch {
         line-height: 35px;
     }
 
+    .what-we-do p {
+        margin-bottom: 15px;
+    }
+
+    .service-hero .custom-flex {
+        flex-direction: column;
+        margin-bottom: 20px;
+        align-items: flex-start;
+    }
+
+    .custom-accordian .accordion-button {
+        font-size: 16px;
+    }
+
+    .other-servies .number {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 30px;
+    }
+
+    .other-service-content h5 {
+        margin-bottom: 20px;
+    }
+
     .contact-left {
         padding: 30px 20px;
         gap: 15px;
@@ -1651,6 +1768,10 @@ header .search-wrapper.showsearch {
 
     .custom-field {
         padding: 10px 20px;
+    }
+
+    .service-hero .title-wrapper {
+        max-width: 100%;
     }
 
     .mail-subscribe .custom-input {
