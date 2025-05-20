@@ -7,6 +7,7 @@ jQuery(document).ready(function ($) {
     }
   });
 
+
   $(".down-arrow").click(function (e) {
     e.stopPropagation();
     const parentLi = $(this).closest("li");
