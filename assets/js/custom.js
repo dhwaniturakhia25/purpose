@@ -21,10 +21,11 @@ jQuery(document).ready(function ($) {
   });
 
   $(".nav-links").click(function (e) {
-    e.preventDefault();
-    $("body").removeClass("mobile-open");
+    if ($(window).width() <= 991) {
+      e.preventDefault();
+      $("body").removeClass("mobile-open");
+    }
   });
-
 
   $(".mobile-toggle").click(function () {
     $("body").toggleClass("mobile-open");

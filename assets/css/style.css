@@ -1144,6 +1144,21 @@ header .search-wrapper.showsearch {
 .blog-box .round-icon {
     background: var(--gray-bg);
 }
+.virtual-cfo .content-box{
+    padding: 30px 20px;
+} 
+.virtual-cfo .content-box h5{
+    margin-bottom: 20px;
+}
+.virtual-cfo .content-box .image {
+    height: 300px;
+}
+.virtual-cfo .content-box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
 
 /* footer */
 .footer {
