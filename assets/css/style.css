@@ -524,6 +524,9 @@ small::after {
     padding: 0 25px 10px 0px;
 }
 
+
+
+
 /* Header */
 .home header {
     position: absolute;
@@ -1123,6 +1126,22 @@ header .search-wrapper.showsearch {
     content: counter(section);
 }
 
+.service-inner.our-philosophy:before {
+    display: none;
+}
+
+.service-inner.our-philosophy {
+    padding-bottom: 0px;
+}
+
+.service-inner.our-philosophy .icon-box {
+    border-radius: 24px 24px 0px 0px;
+}
+
+.service-inner.our-philosophy h2 {
+    max-width: 940px;
+}
+
 /* blog */
 .blog-box {
     background: var(--white);
@@ -1144,15 +1163,19 @@ header .search-wrapper.showsearch {
 .blog-box .round-icon {
     background: var(--gray-bg);
 }
-.virtual-cfo .content-box{
+
+.virtual-cfo .content-box {
     padding: 30px 20px;
-} 
-.virtual-cfo .content-box h5{
+}
+
+.virtual-cfo .content-box h5 {
     margin-bottom: 20px;
 }
+
 .virtual-cfo .content-box .image {
     height: 300px;
 }
+
 .virtual-cfo .content-box .image img {
     height: 100%;
     width: 100%;
@@ -1331,6 +1354,8 @@ header .search-wrapper.showsearch {
         border-radius: 24px;
         min-width: 250px;
         transition: all 1s ease;
+        height: 300px;
+        overflow: auto;
         transform: translateY(30%);
         opacity: 0;
         visibility: hidden;
