@@ -31,26 +31,30 @@ jQuery(document).ready(function ($) {
     $("body").toggleClass("mobile-open");
   });
 
-  const path = window.location.pathname;
-  if (path === "/" || path.endsWith("/index.html")) {
-    $("body").addClass("home");
-  }
-
-  $('.banner-button').on('click', function () {
-    var newBg = $(this).data('bg');
-    $('.banner-button').removeClass('active');
-    $(this).addClass('active');
-    $('#hero').fadeTo(300, 0.2, function () {
-      $(this).css('background-image', 'url(' + newBg + ')');
-    }).fadeTo(300, 1);
-  });
-
-  $('.search-icon').on('click', function () {
-    $('.search-wrapper').addClass('showsearch');
-  });
-
-  $('.close-icon').on('click', function () {
-    $('.search-wrapper').removeClass('showsearch');
+   $('.testimonial-slider').slick({
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
 });
