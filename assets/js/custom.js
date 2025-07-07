@@ -20,12 +20,26 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  // $(".nav-links").click(function (e) {
+  //   if ($(window).width() <= 991) {
+  //     e.preventDefault();
+  //     $("body").removeClass("mobile-open");
+  //   }
+  // });
+
   $(".nav-links").click(function (e) {
-    if ($(window).width() <= 991) {
-      e.preventDefault();
-      $("body").removeClass("mobile-open");
-    }
-  });
+  if ($(window).width() <= 991) {
+    e.preventDefault(); // prevent default link behavior
+    const link = $(this).attr("href"); // get the href of the clicked link
+    $("body").removeClass("mobile-open"); // remove the class
+
+    // wait for animation if needed, then navigate
+    setTimeout(function () {
+      window.location.href = link;
+    }, 100); // adjust delay as needed
+  }
+});
+
 
   $(".mobile-toggle").click(function () {
     $("body").toggleClass("mobile-open");
